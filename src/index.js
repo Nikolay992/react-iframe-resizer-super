@@ -21,7 +21,7 @@ class IframeResizer extends React.Component {
     const iframeResizer = this.refs.frame.iFrameResizer
     iframeResizer && iframeResizer.removeListeners();
   }
-  getDerivedStateFromProps(nextProps) {
+  static getDerivedStateFromProps(nextProps) {
     // can replace content if we got new props
     this.updateIframe(nextProps);
     this.resizeIframe(nextProps);
